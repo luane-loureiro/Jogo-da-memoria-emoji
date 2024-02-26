@@ -4,5 +4,10 @@
     outline: none;
     box-sizing: border-box;
     font-family: monospace;
+    align-items: center;
+    justify-content: center;
+    
 }
+
+
 

@@ -3,7 +3,13 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #fc1e8a;
+    background: linear-gradient(
+        325deg, 
+        #03001e 0%, 
+        #7303c0 30%,
+        #ec38bc 70%,
+        #fdeff9 100% );
+    user-select: none;
 }
 
 .container {
@@ -14,12 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    background: linear-gradient(
-        325deg, 
-        #03001e 0%, 
-        #7303c0 30%,
-        #ec38bc 70%,
-        #fdeff9 100% );
+
 }
 
 h2{
@@ -51,7 +52,6 @@ h2{
 .game{
     width: 430px;
     height: 430px;
-    border: #000 1px solid;
     display: flex;
     flex-wrap: wrap;
     gap:10px;
@@ -59,14 +59,33 @@ h2{
     perspective: 500px;
 }
 
-.iten{
+.item{
     position: relative;
     width: 100px;
     height: 100px;
     display: flex;
-    align-items: center;
     justify-items: center;
+    align-items: center;
     background-color: #fff;
+    font-size: 4em;
+    transform: rotateY('180de');
+    transition: 0.25ms;
 }
 
+.item::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #404040;
+    transition: 0.25em;
+    transform: rotateY('0deg');
+    backface-visibility: hidden;
+}
 
+.item.boxopen{
+    transform: rotateY(0deg);
+}
+
+.boxOpen::after, .boxMatch::after{
+    transform: rotateY(180deg);
+}
