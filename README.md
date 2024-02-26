@@ -1,8 +1,11 @@
 # Jogo-da-memoria-emoji
 ## Descrição do Projeto
 Jogo feito na trilha Potência Tech iFood - Desenvolvimento de Jogos.
+
 O projeto é criar um jogo da Memória utilizando os emojis do próprio windows.
+
 O Objetivo praticar o uso de Html, CSS e Java Script. tendo em mente todos os conceitos de organização de projeto e boas práticas em codificação.
+
 O projeto ainda está em desenvolvimento e vai ganhar updades.
 
 
