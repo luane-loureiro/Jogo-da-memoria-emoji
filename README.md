@@ -1,4 +1,5 @@
-# Jogo-da-memoria-emoji
+# Jogo da Memoria Emoji - Versão Bichinhos
+
 ## Descrição do Projeto
 Jogo feito na trilha Potência Tech iFood - Desenvolvimento de Jogos.
 
